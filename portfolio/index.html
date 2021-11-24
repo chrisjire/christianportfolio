@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5558f55eef.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Monoton&family=Montagu+Slab&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="navbar" id="navbar">
+                <div class="innernavbar">
+                    <div class="logo">
+                        <a href="#">CWJ <span>Solutions</span></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="main_container">
+            <div class="container">
+                <div class="back">
+                    <h1>CWJ</h1>
+                    <h2><strong><span style="font-weight:bold">Solutions</h2>
+                    <p>Hi, I'm Christian welcome to my Portfolio</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <br>
+            <p>
+                <a href="https://www.facebook.com/"><img src="images/Icon/fb.png" alt="Facebook" width="40px" height="40px"></a> &nbsp;
+                <a href="https://www.instagram.com/"><img src="images/Icon/instagram.png" alt="instagram" width="40px" height="40px"></a> &nbsp;
+                <a href="https://twitter.com/home"><img src="images/Icon/twitter.png" alt="Twitter" width="40px" height="40px"></a> &nbsp;
+                <a href="https://www.pinterest.com/"><img src="images/Icon/pinterest.png" alt="pinterest" width="40px" height="40px"></a>
+            </p>
+            <br>
+            <br>
+            <span>Created By <a href="#">CWJsolutions</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        </footer>
+        
+        <script>
+            var hamburger = document.querySelector(".hamburger");
+            var menu = document.querySelector(".menu");
+            
+            hamburger.addEventListener("click", function(){
+                menu.classList.toggle("active");
+            })
+
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-60px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+        
+    </body>
+</html>

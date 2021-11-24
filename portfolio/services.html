@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/5558f55eef.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="navbar" id="navbar">
+                <div class="innernavbar">
+                    <div class="logo">
+                        <a href="#">CWJ <span>Solutions</span></a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="services.html" class="active">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="main_container-services">
+            <div class="container-services">
+                <h1 >-What I Do-</h1>
+                <div class="serv-content">
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-code"></i>
+                            <div class="text">App Design</div>
+                            <p>Mobile Front-end UI/UX app developer, creating responsive, engaging and interactive applications. I am proficient in javascript, jQuery, C++, Kotlin, swift, Flutter and Python, all this languages give me the necessary skill set to create any type of application.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-user-secret"></i>
+                            <div class="text">Cyber Security</div>
+                            <p>Cyber Security is an important, integral part of our digital life, whether professionally  or personally. Utilizing Python, Shell scripting, HTML, javascript and SQL i create systems that protect you from cyber attacks, malware, SQL injection, Phishing, man-in-the-middle attack and denial-of-service attacks</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <i class="fas fa-paint-brush"></i>
+                            <div class="text">Web Design</div>
+                            <p>Front-end UI/UX web developer, creating responsive, engaging and interactive websites. Apart from Html and CSS i am proficient in javascript, jQuery and Python, all this languages give me the necessary skill set to create any type of website.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects">
+                    <h2 style=" color: black; margin-top: 600px;">My Projects</h2>
+                    <p>I have worked on a few projects which are available in the links below:-</p>
+                    <br>
+                        <ul>
+                            <li><a href="https://chrisjire.github.io/Delani-studio-project/"title="">Delani Studio</a></li>
+                            <li><a href="https://chrisjire.github.io/Akan-project/"title="">Akan Project</a></li>
+                            <li><a href="https://chrisjire.github.io/pizza-project/"title="">Fettuccine Pizza</a></li>
+                            <li><a href="https://bchizi.github.io/Mama-Mboga/"title="">MAMA MBOGA</a></li>
+                            <li><a href="https://news-aj.herokuapp.com/"title="">News App</a></li>
+                            <li><a href="https://insta-jr.herokuapp.com/accounts/login/?next=/"title="">Instagram Demo</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <br>
+            <p>
+                <a href="https://www.facebook.com/"><img src="images/Icon/fb.png" alt="Facebook" width="40px" height="40px"></a> &nbsp;
+                <a href="https://www.instagram.com/"><img src="images/Icon/instagram.png" alt="instagram" width="40px" height="40px"></a> &nbsp;
+                <a href="https://twitter.com/home"><img src="images/Icon/twitter.png" alt="Twitter" width="40px" height="40px"></a> &nbsp;
+                <a href="https://www.pinterest.com/"><img src="images/Icon/pinterest.png" alt="pinterest" width="40px" height="40px"></a>
+            </p>
+            <br>
+            <br>
+            <span>Created By <a href="#">CWJsolutions</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.</span>
+        </footer>
+        
+        <script>
+            var hamburger = document.querySelector(".hamburger");
+            var menu = document.querySelector(".menu");
+            
+            hamburger.addEventListener("click", function(){
+                menu.classList.toggle("active");
+            })
+
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-60px";
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        </script>
+        
+    </body>
+</html>

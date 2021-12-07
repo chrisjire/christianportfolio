@@ -7,11 +7,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
-    height: 100vh;
-    margin: 0;
     background: white;
 }
 
@@ -101,7 +100,7 @@ body:before {
     .main_container{
         margin-top: 100px;
     }
-    .main_container-profile{
+    .main_container-profile .container-profile{
         margin-top: 100px;
     }
     .main_container.main_container-services{
@@ -113,7 +112,6 @@ body:before {
     background-image: url(https://images.unsplash.com/photo-1596079890744-c1a0462d0975?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
     padding: 30px;
     height: 760px;
-    width: 1519px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -124,6 +122,7 @@ body:before {
 .main_container .container .back h1{
     font-family: 'Monoton', cursive;
     font-weight: lighter;
+    
 }
 
 .main_container .container .back p{
@@ -136,7 +135,6 @@ body:before {
     background-image: url();
     padding: 30px;
     height: 760px;
-    width: 1519px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -265,7 +263,6 @@ body:before {
     background-image: url();
     padding: 30px;
     height: 750px;
-    width: 1519px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -278,6 +275,7 @@ body:before {
 
 .main_container-contact .container-contact{
     margin-top: 60px;
+    backdrop-filter: blur(20px);
 }
 
 .main_container-contact.container-contact h1{
@@ -295,10 +293,10 @@ body:before {
     .main_container{
         margin-top: 60px;
     }
-    .main_container-profile{
+    .main_container-profile .container-profile{
         margin-top: 60px;
     }
-    .main_container.main_container-services{
+    .main_container.main_container-services .main_container-contact{
         margin-top: 60px;
     }
     .navbar .menu ul{
@@ -596,3 +594,6 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+
+
+
